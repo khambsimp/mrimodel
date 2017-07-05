@@ -1,4 +1,0 @@
-import nibabel as nib
-epi_img = nib.load('downloads/someones_epi.nii.gz')
-epi_img_data = epi_img.get_data()
-epi_img_data.shape
