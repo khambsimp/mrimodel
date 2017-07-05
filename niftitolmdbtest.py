@@ -20,7 +20,7 @@ def norm_volume(volume):
     norm_ax1 = zero_mean_ax1/np.std(volume,axis=1,keepdims=True)
     zero_mean_ax2 = epi_img_data - np.mean(volume,axis=2,keepdims=True)
     norm_ax2 = zero_mean_ax2/np.std(volume,axis=2,keepdims=True)
-    return norm_ax0,norm_ax1,norm_ax2
+    return norm_ax0,norm_ax1,norm_ax2 # what is the structure of the array created by this command?
 def aug_volume(volume):
     """
     Function to augment volume with 90, 180, and 270 degree rotations
